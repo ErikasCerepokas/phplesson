@@ -1,14 +1,9 @@
 <head>
-    <title>
-        <?php print'Aš,'.date(' l').' ir PHP'; ?>!
-    </title>
+    <title> PHP lydės ir <?php print date ('Y-m-d', strtotime('+1 day')); ?></title>
 </head>
-<h1>
-    <strong>Erikas</strong> - HTML<?php print' ir PHP ';?>asas<br>
-    jau nuo<?php print date(' Y ').'metų' ?>
-</h1>
-<p>
-    Viskas prasidėjo nuo <?php print date('m ')?><br>
-    <?php print 'mėnesio,'.date(' d ').'dieną!'?>
-</p>
+<body>
+    <h1><b>Erikas</b>- PHP su manim buvo ir<?php print date(' h', strtotime('-1')).' valandą!';?></h1>
+    <p><?php print date('Y ', strtotime('+1 year')) ?>ne už kalnų!</p>
+
+</body>
 
