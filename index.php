@@ -1,12 +1,14 @@
-<html>
 <head>
-    <title>Aš valdau html <?php print"ir PHP"?> </title>
+    <title>
+        <?php print'Aš,'.date(' l').' ir PHP'; ?>!
+    </title>
 </head>
-<body>
-    <h1><strong>Erikas</strong> - Html <?php print'ir PHP'?> asas</h1>
-    <p>Kuriu dinaminį turinį.</p>
-    <p>
-        Atidaryta: <?php print date ('Y-m-d H:i:s'); ?>
-    </p>
-</body>
-</html>
+<h1>
+    <strong>Erikas</strong> - HTML<?php print' ir PHP ';?>asas<br>
+    jau nuo<?php print date(' Y ').'metų' ?>
+</h1>
+<p>
+    Viskas prasidėjo nuo <?php print date('m ')?><br>
+    <?php print 'mėnesio,'.date(' d ').'dieną!'?>
+</p>
+
