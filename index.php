@@ -1,10 +1,11 @@
 <html>
-<head>
-    <title> PHP lydės ir <?php print date ('Y-m-d', strtotime('+1 day')); ?></title>
-</head>
-<body>
-    <h1><b>Erikas</b>- PHP su manim buvo ir<?php print date(' h', strtotime('-1')).' valandą!';?></h1>
-    <p><?php print date('Y ', strtotime('+1 year')) ?>ne už kalnų!</p>
-</body>
+    <head>
+        <title><!--Komentarai--></title>
+    </head>
+    <body>
+        <h1><!-- Dainų tekstai --></h1>
+        <h2><!-- Paragrafo Daina --></h2>
+        <p><!-- Aš toks vienišas jauans paragrafas...--></p>
+        <p><!-- Mindau svetimo kodo gatves...--></p>
+    </body>
 </html>
-
