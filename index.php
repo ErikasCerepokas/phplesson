@@ -1,23 +1,26 @@
 <?php
-$skola = rand(1, 100);
-$graza1 = rand(101, 200);
-$graza2 = rand(201, 300);
 
-$h1 = 'Skolos skaičiuoklė';
-$h2 = "Jei paėmei $skola jievrų";
-$h3 = "Su dviem kabančiais grąžinsi $graza2";
-$h4 = "Su vienu kabančiu grąžinsi $graza1";
+$bin_vol = 40;
+$bin_heap_vol = rand(1, 15);
+$trash_per_day = 15;
+
+$atsakymas = round(($bin_vol + $bin_heap_vol) / $trash_per_day );
+
+$siuksliu_prog = "Šiuklšių prognozė";
+$siukslines_turis = "Turima šiukšlinė - $bin_vol litrų";
+$gerai_kol = "Žmona nieko nesako, kol kaupas neviršija $bin_heap_vol litrų";
+$isvada = "Išvada: Nieko nedarysiu $atsakymas dienų.";
+        
+
 ?>
 <html>
     <head>
-        <title>UZDUOTIS#3</title>
+        <title>UZDUOTIS#4</title>
     </head>
     <body>
-        <div>
-            <h1><?php print $h1; ?></h1>
-            <h2><?php print $h2; ?></h2>
-            <h3><?php print $h3; ?></h3>
-            <h3><?php print $h4; ?></h3>
-        </div>
+        <h1><?php print $siuksliu_prog; ?></h1>
+        <p><?php print $siukslines_turis; ?></p>
+        <p><?php print $gerai_kol; ?></p>
+        <h3><?php print $isvada; ?></h3>
     </body>
 </html>
