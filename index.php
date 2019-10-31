@@ -1,7 +1,21 @@
+<?php
+$string = 'Erikas';
+$int = -10;
+$boolean = true;
+$null = null;
+?>
 <html>
     <head>
+        <title>Variables</title>
     </head>
     <body>
-        <img src="dice/<?php print rand(1, 6) ;?>.png ">
+        <table>
+            <ul>
+                <li><?php print $string; ?></li>
+                <li><?php print $int; ?></li>
+                <li><?php print $boolean; ?></li>
+                <li><?php print $null; ?></li>
+            </ul>
+        </table>
     </body>
 </html>
