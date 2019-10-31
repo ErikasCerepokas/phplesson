@@ -1,7 +1,7 @@
 <?php
-$skola = (rand(1, 100));
-$graza1 = (rand(101, 200));
-$graza2 = (rand(201, 300));
+$skola = rand(1, 100);
+$graza1 = rand(101, 200);
+$graza2 = rand(201, 300);
 
 $h1 = 'Skolos skaičiuoklė';
 $h2 = "Jei paėmei $skola jievrų";
