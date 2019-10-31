@@ -1,26 +1,15 @@
 <?php
-$string = 'Erikas';
-$int = -10;
-$bool = true;
-$null = null;
-#
-$li_1 = "String tipas: $string";
-$li_2 = "Integer tipas: $int";
-$li_3 = "Boolean tipas: $bool";
-$li_4 = "Null tipas: $null";
+$img_src = 'https://hips.hearstapps.com/esquireuk.cdnds.net/15/37/2048x2730/2048x2730-dumb-and-dumber-to-43-jpg-25867e58.jpg?resize=480:*'
+
 ?>
 <html>
     <head>
-        <title>Variables</title>
+        <title>IMG</title>
     </head>
     <body>
-        <table>
-            <ul>
-                <li><?php print $li_1; ?></li>
-                <li><?php print $li_2; ?></li>
-                <li><?php print $li_3; ?></li>
-                <li>N<?php print $li_4; ?></li>
-            </ul>
-        </table>
+        <img src="<?php print $img_src ?>"/>
+        <img src="<?php print $img_src ?>"/>
+        <img src="<?php print $img_src ?>"/>
+        <img src="<?php print $img_src ?>"/>
     </body>
 </html>
