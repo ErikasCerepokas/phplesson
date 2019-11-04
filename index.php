@@ -1,30 +1,45 @@
 <?php
-$grizai_velai = rand(0, 1);
-$grizai_isgeres = rand(0, 1);
-$h3_result = 'Nemiegosi'; // Defaultine versija , kuri nurodo variable pradine verte , jei yra irasomas variable else arba if'e//
 
-if ($grizai_velai && !$grizai_isgeres) {
-    $h2_result = 'Grįžai vėlai';
-    $h3_result = 'Miegosi';// Paskirtas specialus variable.//
-} else if ($grizai_velai && $grizai_isgeres) {
-    $h2_result = 'Grįžai vėlai ir išgėręs';
-} else if (!$grizai_velai && $grizai_isgeres) {
-    $h2_result = 'Grįžai išgėręs';
-} else { 
-    $h2_result = 'Nieko nepadarei';
+$sunny = rand(0, 1);
+        
+if ($sunny) {
+   $oras = 'Saulėta';
+   $img = 'bg-sunny';
+} else {
+    $oras = 'Debesuota';
+    $img = 'bg-cloudy';
 }
-
-$h1 = 'Buitine skaiciuokle';
-$h2 = "Situacija: $h2_result";
-$h3 = "Isvada: $h3_result ant sofos"
 ?>
 <html>
     <head>
-        <title>Buitine skaiciuokle</title>
+        <title>orai</title>
+        <style>
+            .bg-sunny{
+                background-image:url("https://previews.123rf.com/images/urfandadashov/urfandadashov1809/urfandadashov180902608/109317496-sun-vector-icon-isolated-on-transparent-background-sun-logo-concept.jpg");
+                width: 100px;
+                height: 100px;
+                background-size: cover
+            }
+            .bg-cloudy{
+                background-image:url("https://media.istockphoto.com/vectors/cloudy-icon-vector-sign-and-symbol-isolated-on-white-background-logo-vector-id1001139946");
+                width: 100px;
+                height: 100px;
+                background-size: cover
+            }
+            .flex{
+                Display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
     </head>
-    <body>  
-        <h1><?php print $h1; ?></h1>
-        <h2><?php print $h2; ?></h2>
-        <h3><?php print $h3; ?></h3>
+    <body>
+        <main class="flex">
+            <div class="<?php print $img; ?>"></div>
+            <div>
+                <p><?php print $oras; ?></p>
+            </div>
+        </main>
     </body>
 </html>
