@@ -1,11 +1,11 @@
 <?php
 $grizai_velai = rand(0, 1);
 $grizai_isgeres = rand(0, 1);
-$h3_result = 'Nemiegosi';
+$h3_result = 'Nemiegosi'; // Defaultine versija , kuri nurodo variable pradine verte , jei yra irasomas variable else arba if'e//
 
 if ($grizai_velai && !$grizai_isgeres) {
     $h2_result = 'Grįžai vėlai';
-    $h3_result = 'Miegosi';
+    $h3_result = 'Miegosi';// Paskirtas specialus variable.//
 } else if ($grizai_velai && $grizai_isgeres) {
     $h2_result = 'Grįžai vėlai ir išgėręs';
 } else if (!$grizai_velai && $grizai_isgeres) {
