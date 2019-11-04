@@ -1,45 +1,41 @@
-<?php
+<?php 
+$bool = true;
+$int = 1 ;
+$flt = 1.23;
+$str = "1.23";
 
-$sunny = rand(0, 1);
-        
-if ($sunny) {
-   $oras = 'Saulėta';
-   $img = 'bg-sunny';
+if ($bool == $int){
+    $type = 'Lygūs';
 } else {
-    $oras = 'Debesuota';
-    $img = 'bg-cloudy';
+    $type = 'Identiški';
+    }
+if ($str == $bool) {
+    $type_1 = 'Lygūs';
+} else {
+    $type_1 = 'Identiški';
 }
+if ($flt == $str){
+    $type_2 = 'Lygūs';
+} else {
+    $type_2 = 'Nelygūs';
+}
+
+
+$li_1 = "Bool (true) ir Integer (1):$type";
+$li_2 = "String (1) ir Boolean (1):$type_1";
+$li_3 = "Float (1.23) ir String (1.23):$type_2"
 ?>
 <html>
     <head>
-        <title>orai</title>
-        <style>
-            .bg-sunny{
-                background-image:url("https://previews.123rf.com/images/urfandadashov/urfandadashov1809/urfandadashov180902608/109317496-sun-vector-icon-isolated-on-transparent-background-sun-logo-concept.jpg");
-                width: 100px;
-                height: 100px;
-                background-size: cover
-            }
-            .bg-cloudy{
-                background-image:url("https://media.istockphoto.com/vectors/cloudy-icon-vector-sign-and-symbol-isolated-on-white-background-logo-vector-id1001139946");
-                width: 100px;
-                height: 100px;
-                background-size: cover
-            }
-            .flex{
-                Display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
-        </style>
+        <title>Uzduotis#7</title>
     </head>
     <body>
-        <main class="flex">
-            <div class="<?php print $img; ?>"></div>
-            <div>
-                <p><?php print $oras; ?></p>
-            </div>
+        <main>
+            <ul>
+                <li><?php print $li_1; ?></li>
+                <li><?php print $li_2; ?></li>
+                <li><?php print $li_3; ?></li>
+            </ul>
         </main>
     </body>
 </html>
