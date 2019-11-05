@@ -5,15 +5,17 @@ $month_income = 700;
 
 
 for($x = 1; $x < $months; $x++ ){
-    $month_expenses = rand(800, 1300);
+    $month_expenses = rand(500, 1000);
     $wallet += $month_income - $month_expenses;
-    if($wallet < 0){
+    if ($wallet < 0) {
+        $h2 = "Atsargiai, $x menėsį gali baigtis pinigai!";
         break;
-    }
+    } else if ($wallet > 0) {
+        $h2 = "Po $months m., bus prognozuojamas likutis $wallet";
+    }    
 }
 
 $h1 = 'Pinigines skaiciuokle';
-$h2 = "Atsargiai, $x menesi gali baigtis pinigai!" ;
 ?>
 <html>
     <head>
