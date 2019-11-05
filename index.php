@@ -1,30 +1,28 @@
 <?php
-$kates = rand(1, 3);
-$sunys = rand(1, 3);
-$katasuniai = 0;
+$months = 12;
+$wallet = 1000;
+$month_income = 700;
 
-for ($x = 0; $x < $kates; $x++) {
-    for ($z = 0; $z < $sunys; $z++) {
-        $pavyko = rand(0, 1);
-        if ($pavyko) {
-            $katasuniai++;
-            break;
-        }
+
+for($x = 1; $x < $months; $x++ ){
+    $month_expenses = rand(800, 1300);
+    $wallet += $month_income - $month_expenses;
+    if($wallet < 0){
+        break;
     }
 }
-$h1 = 'Katasuniu iseiga';
-$h2 = "Dalyvavo $kates kates ir $sunys sunys";
-$h3 = "Katasuniu iseiga: $katasuniai";
+
+$h1 = 'Pinigines skaiciuokle';
+$h2 = "Atsargiai, $x menesi gali baigtis pinigai!" ;
 ?>
 <html>
     <head>
-        <title>Uzduotis2</title> 
+        <title>Uzduotis3</title> 
     </head>
     <body>
         <main>
-            <h1><?php print $h1; ?></h1>
-            <h2><?php print $h2; ?></h2>
-            <h3><?php print $h3; ?></h3>
+            <h1><?php print $h1 ?></h1>
+            <h2><?php print $h2 ?></h2>
         </main>
     </body>
 </html>
