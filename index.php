@@ -5,15 +5,15 @@ $pack = 20;
 $data = date('N', strtotime('now'));
 $count_ttl = 0;
 
-for($x = 1; $x < $days; $x++){
-    $data = date('N', strtotime('+' . 0 . 'now' ));
-    if($data < 5){
+for ($x = 1; $x < $days; $x++) {
+    $data = date('N', strtotime('+' . 0 . 'now'));
+    if ($data < 5) {
         $cigs_mon_fri = rand(3, 20);
         $count_ttl += $cigs_mon_fri;
-    }else if($data === 6){
+    } else if ($data === 6) {
         $cigs_sat = rand(15, 30);
         $count_ttl += $cigs_sat;
-    }else if($data === 7){
+    } else if ($data === 7) {
         $cigs_sun = rand(1, 5);
         $count_ttl = $cigs_sun;
     }
