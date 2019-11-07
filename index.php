@@ -1,44 +1,49 @@
 <?php
-$zmogaus_daiktas = [
+$Lentyn_saldytuvis = [
+    'produktai_virsus' =>
     [
-        'Vardas' => 'Petras',
-        'Pavardė' => 'Pizdzys',
-        'daiktai' =>
         [
-           [ //Idejau massiva tarp daiktu massivo , nes daiktu gali buti daug
-            'pavadinimas' => 'telefonas',
-            'bukle' => 'prapistas',
-           ],
+            'pavadinimas' => 'Kiaušiniai',
+            'kiekis' => 3,
+        ],
+        [
+            'pavadinimas' => 'Grietinė',
+            'kiekis' => 1,
+        ],
+        [
+            'pavadinimas' => 'Jogurtas',
+            'kiekis' => 2,
+        ],
+        [
+            'pavadinimas' => 'Žuvis',
+            'kiekis' => 0,
         ],
     ],
+    'produktai_apacia' =>
     [
-        'Vardas' => 'Tomas',
-        'Pavarde' => 'Ablomas',
-        'daiktai' =>
         [
-            [
-            'pavadinimas' => 'buljonas',
-            'bukle' => 'naudojamas'
-            ]
+            'pavadinimas' => 'Pienas',
+            'kiekis' => 1,
         ],
-    ],
-    [
-        'Vardas' => 'Anas',
-        'Pavarde' => 'Shitkovas',
-        'daiktai' =>
         [
-            [
-            'pavadinimas' => 'rulonas',
-            'bukle' => 'rulonas',
-            ]
+            'pavadinimas' => 'Kefyras',
+            'kiekis' => 0,
+        ],
+        [
+            'pavadinimas' => 'Samagonas',
+            'kiekis' => 2,
+        ],
+        [
+            'pavadinimas' => 'Kečupas',
+            'kiekis' => 2,
         ],
     ],
 ];
-var_dump($zmogaus_daiktas);
+var_dump($Lentyn_saldytuvis);
 ?>
 <html>
     <head>
-        <title>Arijus</title>
+        <title>Arėja</title>
     </head>
     <body>
         <main>
