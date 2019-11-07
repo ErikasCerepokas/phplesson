@@ -6,7 +6,7 @@ $data = date('N', strtotime('now'));
 $count_ttl = 0;
 
 for ($x = 1; $x < $days; $x++) {
-    $data = date('N', strtotime('+' . 0 . 'now'));
+    $data = date('N', strtotime("+ $x days"));
     if ($data < 5) {
         $cigs_mon_fri = rand(3, 20);
         $count_ttl += $cigs_mon_fri;
