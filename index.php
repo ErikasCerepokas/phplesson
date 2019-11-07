@@ -3,27 +3,34 @@ $zmogaus_daiktas = [
     [
         'Vardas' => 'Petras',
         'Pavardė' => 'Pizdzys',
-        'daiktai' => [
-                'pavadinimas' => 'telefonas',
-                'bukle' => 'prapistas',
-            ],                      
+        'daiktai' =>
+        [
+           [ //Idejau massiva tarp daiktu massivo , nes daiktu gali buti daug
+            'pavadinimas' => 'telefonas',
+            'bukle' => 'prapistas',
+           ],
+        ],
     ],
     [
         'Vardas' => 'Tomas',
         'Pavarde' => 'Ablomas',
         'daiktai' =>
         [
+            [
             'pavadinimas' => 'buljonas',
             'bukle' => 'naudojamas'
-        ], 
+            ]
+        ],
     ],
     [
         'Vardas' => 'Anas',
         'Pavarde' => 'Shitkovas',
         'daiktai' =>
         [
+            [
             'pavadinimas' => 'rulonas',
             'bukle' => 'rulonas',
+            ]
         ],
     ],
 ];
