@@ -1,29 +1,25 @@
 <?php
-$boulingas = [
-    'takelis_1' =>
+$rallycross = [
     [
-        'danga' => 'Tinkama',
-        'kegliai'=>
-        [
-            1,0,0,1,
-            0,0,1,
-            0,1,
-            1,
-        ]
+      'posukio_kampas' => '180 laipsnių.'
     ],
-    'Takelis_2' =>
     [
-       'danga' => 'netinkamas',
-        'kegliai'=>
-        [
-            0,0,0,0,
-            0,0,0,
-            0,0,
-            0,
-        ]
+      'posukio_kampas' => '15 laipsnių.'
+    ],
+    [
+      'posukio_kampas' => '315 laipsnių.'
+    ],
+    [
+      'posukio_kampas' => '270 laipsnių.'
+    ],
+    [
+      'posukio_kampas' => '395 laipsnių.'
+    ],
+    [
+      'posukio_kampas' => '90laipsnių.'
     ],
 ];
-var_dump($boulingas);
+var_dump($rallycross);
 ?>
 <html>
     <head>
