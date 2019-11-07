@@ -1,45 +1,29 @@
 <?php
-$Lentyn_saldytuvis = [
-    'produktai_virsus' =>
+$boulingas = [
+    'takelis_1' =>
     [
+        'danga' => 'Tinkama',
+        'kegliai'=>
         [
-            'pavadinimas' => 'Kiaušiniai',
-            'kiekis' => 3,
-        ],
-        [
-            'pavadinimas' => 'Grietinė',
-            'kiekis' => 1,
-        ],
-        [
-            'pavadinimas' => 'Jogurtas',
-            'kiekis' => 2,
-        ],
-        [
-            'pavadinimas' => 'Žuvis',
-            'kiekis' => 0,
-        ],
+            1,0,0,1,
+            0,0,1,
+            0,1,
+            1,
+        ]
     ],
-    'produktai_apacia' =>
+    'Takelis_2' =>
     [
+       'danga' => 'netinkamas',
+        'kegliai'=>
         [
-            'pavadinimas' => 'Pienas',
-            'kiekis' => 1,
-        ],
-        [
-            'pavadinimas' => 'Kefyras',
-            'kiekis' => 0,
-        ],
-        [
-            'pavadinimas' => 'Samagonas',
-            'kiekis' => 2,
-        ],
-        [
-            'pavadinimas' => 'Kečupas',
-            'kiekis' => 2,
-        ],
+            0,0,0,0,
+            0,0,0,
+            0,0,
+            0,
+        ]
     ],
 ];
-var_dump($Lentyn_saldytuvis);
+var_dump($boulingas);
 ?>
 <html>
     <head>
