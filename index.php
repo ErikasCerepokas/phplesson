@@ -1,25 +1,56 @@
 <?php
-$rallycross = [
+$cube8x8 = [
+    //Kiekvienas massivas ,tai nauja linija 1(rodo ijungta spalva) 0(isjungta). Skaitoma iš kairės į dešinę.
     [
-      'posukio_kampas' => '180 laipsnių.'
+        'zalia' => [1, 1, 1, 1, 1, 1, 1, 1],
+        'geltona' => [0, 1, 1, 1, 1, 1, 1, 0],
+        'raudona' => false
+        'isjungta' =>  false,
     ],
     [
-      'posukio_kampas' => '15 laipsnių.'
+        'zalia' => [1, 0, 0, 0, 0, 0, 0, 1],
+        'geltona' => [0, 1, 1, 1, 1, 1, 1, 0],
+        'raudona' => false,
+        'isjungta' =>  false,
     ],
     [
-      'posukio_kampas' => '315 laipsnių.'
+        'zalia' => [1, 0, 0, 0, 0, 0, 0, 0],
+        'geltona' => [0, 1, 0, 0, 0, 0, 1, 0],
+        'raudona' => [0, 0, 1, 1, 1, 1, 0, 0],
+        'isjungta' =>  false,
     ],
     [
-      'posukio_kampas' => '270 laipsnių.'
+        'zalia' => [1, 0, 0, 0, 0, 0, 0, 1],
+        'geltona' => [0, 1, 0, 1, 1, 0, 1, 0],
+        'raudona' => [0, 0, 1, 0, 0, 1, 0, 0],
+        'isjungta' =>  false,
     ],
     [
-      'posukio_kampas' => '395 laipsnių.'
+        'zalia' => [1, 0, 0, 0, 0, 0, 0, 1],
+        'geltona' => [0, 1, 0, 1, 1, 0, 1, 0],
+        'raudona' => [0, 0, 1, 0, 0, 1, 0, 0],
+        'isjungta' =>  false,
     ],
     [
-      'posukio_kampas' => '90laipsnių.'
+        'zalia' => [1, 0, 0, 0, 0, 0, 0, 1],
+        'geltona' => [0, 1, 0, 0, 0, 0, 1, 0],
+        'raudona' => [0, 0, 1, 1, 1, 1, 0, 0],
+        'isjungta' =>  false,
     ],
-];
-var_dump($rallycross);
+    [
+        'zalia' => [1, 0, 0, 0, 0, 0, 0, 1],
+        'geltona' => [0, 1, 1, 1, 1, 1, 1, 0],
+        'raudona' => false,
+        'isjungta' =>  false,
+    ],
+    [
+        'zalia' => [1, 1, 1, 1, 1, 1, 1, 1],
+        'geltona' => false,
+        'raudona' => false,
+        'isjungta' =>  false,
+    ],
+]
+var_dump($cube8x8);
 ?>
 <html>
     <head>
